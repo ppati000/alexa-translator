@@ -1,0 +1,109 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "übersetzer",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SetLanguageIntent",
+                    "slots": [
+                        {
+                            "name": "language",
+                            "type": "Language"
+                        }
+                    ],
+                    "samples": [
+                        "Stelle {language} ein",
+                        "Setze die Sprache auf {language}",
+                        "Stelle die Sprache auf {language}"
+                    ]
+                },
+                {
+                    "name": "TranslateIntent",
+                    "slots": [
+                        {
+                            "name": "translateText",
+                            "type": "Anything"
+                        }
+                    ],
+                    "samples": [
+                        "Übersetze {translateText}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Language",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Russisch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kroatisch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Italienisch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Französisch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Spanisch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dänisch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Englisch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Deutsch"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Anything",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "etwas etwas etwas etwas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "etwas"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

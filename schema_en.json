@@ -1,0 +1,48 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "translator",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SetLanguageIntent",
+                    "slots": [
+                        {
+                            "name": "language",
+                            "type": "AMAZON.Language"
+                        }
+                    ],
+                    "samples": [
+                        "change language to {language}",
+                        "set language to {language}"
+                    ]
+                },
+                {
+                    "name": "TranslateIntent",
+                    "slots": [
+                        {
+                            "name": "translateText",
+                            "type": "AMAZON.LITERAL"
+                        }
+                    ],
+                    "samples": [
+                        "translate {something|translateText}",
+                        "translate {something something something something|translateText}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
